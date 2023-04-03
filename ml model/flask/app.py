@@ -22,7 +22,7 @@ def home_adm():
 
 # prediction function
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict_admission', methods=['POST'])
 def predict_admission():
     # retrieve form data
     input_features = [float(x) for x in request.form.values()]
