@@ -12,8 +12,7 @@ scaler_adm = pickle.load(open('/workspaces/Hack_Horizons/ml model/flask/scaler_a
 model_plm = pickle.load(open('/workspaces/Hack_Horizons/ml model/flask/model_plm.pickle','rb'))
 scaler_plm = pickle.load(open('/workspaces/Hack_Horizons/ml model/flask/scaler_plm.pickle','rb'))
 
-columns_plm = ['ssc_p', 'hsc_p', 'degree_p', 'etest_p', 'mba_p', 'ssc_p', 'hsc_p', 
-               'degree_p', 'etest_p', 'mba_p', 'gender_M', 'ssc_b_Others',
+columns_plm = ['ssc_p', 'hsc_p', 'degree_p', 'etest_p', 'mba_p', 'gender_M', 'ssc_b_Others',
                'hsc_b_Others', 'hsc_s_Commerce', 'hsc_s_Science', 'degree_t_Others',
                'degree_t_Sci&Tech', 'workex_Yes', 'specialisation_Mkt&HR']
 
