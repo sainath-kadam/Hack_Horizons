@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Admission Chance Predictor</title>
+  </head>
+  <body>
+    <h1>Admission Chance Predictor</h1>
+    <form action="/predict" method="post">
+      <label>GRE Score:</label>
+      <input type="text" name="gre_score" required><br><br>
+      <label>TOEFL Score:</label>
+      <input type="text" name="toefl_score" required><br><br>
+      <label>University Rating:</label>
+      <input type="text" name="university_rating" required><br><br>
+      <label>SOP:</label>
+      <input type="text" name="sop" required><br><br>
+      <label>LOR:</label>
+      <input type="text" name="lor" required><br><br>
+      <label>CGPA:</label>
+      <input type="text" name="cgpa" required><br><br>
+      <label>Research:</label>
+      <input type="text" name="research" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
