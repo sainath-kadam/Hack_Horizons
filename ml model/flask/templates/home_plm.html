@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Placement Prediction Form</title>
+</head>
+<body>
+    <h1>Placement Prediction Form</h1>
+    <form method="POST" action="/predict_placement">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br><br>
+
+        <label for="ssc_p">Secondary Education percentage:</label>
+        <input type="number" id="ssc_p" name="ssc_p" min="0" max="100" step="0.01" required><br><br>
+
+        <label for="ssc_b">Board of Education:</label>
+        <select id="ssc_b" name="ssc_b">
+            <option value="Others">Others</option>
+            <option value="Central">Central</option>
+        </select><br><br>
+
+        <label for="hsc_p">Higher Secondary Education percentage:</label>
+        <input type="number" id="hsc_p" name="hsc_p" min="0" max="100" step="0.01" required><br><br>
+
+        <label for="hsc_b">Board of Education:</label>
+        <select id="hsc_b" name="hsc_b">
+            <option value="Others">Others</option>
+            <option value="Central">Central</option>
+        </select><br><br>
+
+        <label for="hsc_s">Specialization in Higher Secondary Education:</label>
+        <select id="hsc_s" name="hsc_s">
+            <option value="Commerce">Commerce</option>
+            <option value="Science">Science</option>
+            <option value="Arts">Arts</option>
+        </select><br><br>
+
+        <label for="degree_p">Degree Percentage:</label>
+        <input type="number" id="degree_p" name="degree_p" min="0" max="100" step="0.01" required><br><br>
+
+        <label for="degree_t">Under Graduation(Degree type):</label>
+        <select id="degree_t" name="degree_t">
+            <option value="Sci&Tech">Science and Technology</option>
+            <option value="Comm&Mgmt">Commerce and Management</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <label for="workex">Work Experience:</label>
+        <select id="workex" name="workex">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select><br><br>
+
+        <label for="etest_p">Employability test percentage:</label>
+        <input type="number" id="etest_p" name="etest_p" min="0" max="100" step="0.01" required><br><br>
+
+        <label for="specialisation">Post Graduation(MBA)- Specialization:</label>
+        <select id="specialisation" name="specialisation">
+            <option value="Mkt&HR">Marketing and Human Resources</option>
+            <option value="Mkt&Fin">Marketing and Finance</>
+            </select>
+            <br><br>
+            <label for="mba_p">MBA percentage:</label>
+            <input type="number" id="mba_p" name="mba_p" min="0" step="0.01" required>
+            <br><br>
+            
+            <input type="submit" value="Predict">
+        </form>
