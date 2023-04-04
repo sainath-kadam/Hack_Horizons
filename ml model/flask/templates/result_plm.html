@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Placement Prediction - Result</title>
+</head>
+<body>
+	{% if prediction == 1 %}
+		<h1>Congratulations!</h1>
+		<p>You are predicted to be placed.</p>
+	{% else %}
+		<h1>We are sorry to inform you!</h1>
+		<p>You are predicted to not be placed.</p>
+	{% endif %}
+	<br>
+	<a href="/">Go back to home page</a>
+</body>
+</html>
