@@ -145,19 +145,19 @@ section {
 .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .menu .box-container .box {
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
   background: #757575
   /* border: 0.2rem solid #30ff07; */
 }
 
 .menu .box-container .box img {
-  height: 12rem;
-  border-radius: 40%;
+  height: 8rem;
+  border-radius: 50%;
 }
 
 .menu .box-container .box h3 {
@@ -167,13 +167,13 @@ section {
 }
 .menu .box-container .box p {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 1rem 0;
 }
 
 .menu .box-container .box .trend {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 0.5rem 0;
 }
 
@@ -188,7 +188,7 @@ section {
   transition: 0.5s;
 }
 
-
+/* 
 .blogs .box-container .box {
   border: 0.2rem solid  #30ff07;
 }
@@ -235,14 +235,15 @@ section {
   line-height: 1.8;
   color: #ccc;
   padding: 1rem 0;
-}
+} */
 
 .footer {
   background: #13131a;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   height: 1rem;
 }
+
 
 .footer .share {
   padding: 1rem 0;

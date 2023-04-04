@@ -10,7 +10,7 @@ import Top3 from '../../src/components/Home/Top3/Top3';
 import Footer from '../../src/components/Home/Footer/Footer';
 import { Routes, Route} from "react-router-dom"
 import Top4 from './Home/Top4/Top4';
-
+import Top5 from './Home/Top5/Top5';
 
 
 // import CodeEditor from './CodeEditor/CodeEditor';
@@ -63,9 +63,12 @@ const Dashboard = () => {
         <Top/>
         <Top2/>
         <Top3/>
+        
+        <Top5/>
         <Top4/>
         <br/>
         <Footer/>
+        <br/>
         {/* <Routes>
               <Route path="/dash/" element={<Top3 />} />
               
