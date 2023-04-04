@@ -32,9 +32,9 @@ const Top4 = () => {
   return (
     <StyledContactForm>
       <h1 className="heading">
-          <span>Contact With Us</span>
-        </h1>
-   
+        <span>Contact With Us</span>
+      </h1>
+
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" required />
@@ -51,15 +51,18 @@ const Top4 = () => {
 export default Top4;
 
 // Styles
-// Styles
 const StyledContactForm = styled.div`
-  width: 90%;
+  width: 93%;
+  margin-left:2rem;
+  margin-right:2rem;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   height: calc(100vh - 200px);
+  border: 2px solid black;
+  background-color: #f0f0f0;
 
   form {
     display: flex;
@@ -119,8 +122,7 @@ const StyledContactForm = styled.div`
   h1 {
     text-align: center;
   }
-`;
-
+};
 
 
 // import emailjs from "@emailjs/browser";

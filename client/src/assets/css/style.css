@@ -53,6 +53,7 @@ section {
 .heading span {
   color: #FF5100;
   text-transform: uppercase;
+  font-size: x-large;
 }
 
 .btn {
@@ -112,12 +113,12 @@ section {
 .about .row {
   display: flex;
   align-items: center;
-  background: #757575;
+  background: black;
   flex-wrap: wrap;
 }
 
 .about .row .image {
-  flex: 1 1 45rem;
+  flex:  45rem;
 }
 
 .about .row .image img {
@@ -151,7 +152,7 @@ section {
 .menu .box-container .box {
   padding: 2rem;
   text-align: center;
-  background: #757575
+  background: black;
   /* border: 0.2rem solid #30ff07; */
 }
 
@@ -184,7 +185,7 @@ section {
 }
 
 .menu .box-container .box:hover {
-  background: black;
+  background: green;
   transition: 0.5s;
 }
 
@@ -235,6 +236,13 @@ section {
   line-height: 1.8;
   color: #ccc;
   padding: 1rem 0;
+} */
+
+/* .footer {
+  background: #13131a;
+  text-align: center;
+  padding: 1rem 0;
+  height: 0rem;
 } */
 
 .footer {
@@ -296,6 +304,8 @@ section {
 .footer .credit span {
   color: #ffc107;
 }
+
+
 
 /* media queries  */
 @media (max-width: 991px) {

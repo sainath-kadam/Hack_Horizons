@@ -115,7 +115,7 @@ import ReactPlayer from 'react-player';
 import React, { useRef, useEffect } from 'react';
 import './VideoPlayer.css';
 
-const VIDEO_PATH = 'https://drive.google.com/file/d/1GvVrExeSFZMYHAIv-iFMRgSW7BfDcGY8/view?usp=drivesdk';
+const VIDEO_PATH = 'https://youtu.be/wLi5Of3fB-w';
 
 function VideoPlayer() {
   const playerRef = useRef(null);

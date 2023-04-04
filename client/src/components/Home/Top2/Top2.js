@@ -12,7 +12,7 @@ const About = () => {
           </div>
 
           <div className="content">
-            <h3>what makes our  webiste special?</h3>
+            <h3>what makes our  website special?</h3>
             <p>
             "Our goal is to help job seekers like you prepare for success in the job market. We understand the importance of preparation, research, and self-reflection in achieving career goals. Our resources are designed to help you showcase your strengths, identify areas for growth, and develop the skills and knowledge needed to succeed in your chosen career path."
             </p>

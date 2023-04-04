@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     background-color: #333;
   }
   
@@ -11,5 +11,21 @@
     height: 80%;
     object-fit: contain;
     cursor: pointer;
+  }
+  
+  .react-player {
+    position: relative !important;
+    padding-top: 56.25% !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  
+  .react-player iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
   }
   
