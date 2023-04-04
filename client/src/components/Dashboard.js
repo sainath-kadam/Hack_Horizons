@@ -11,6 +11,7 @@ import Footer from '../../src/components/Home/Footer/Footer';
 import { Routes, Route} from "react-router-dom"
 import Top4 from './Home/Top4/Top4';
 import Top5 from './Home/Top5/Top5';
+import VideoPlayer from './Home/VideoPlayer/VideoPlayer';
 
 
 // import CodeEditor from './CodeEditor/CodeEditor';
@@ -62,6 +63,7 @@ const Dashboard = () => {
         <>
         <Top/>
         <Top2/>
+        <VideoPlayer/>
         <Top3/>
         
         <Top5/>
