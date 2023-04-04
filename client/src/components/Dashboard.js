@@ -4,14 +4,15 @@ import { LoginContext } from './ContextProvider/Context';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 // import "../../src/assets/css/style.css";
-import Top from '../../src/components/Home/Top1/Top';
-import Top2 from '../../src/components/Home/Top2/Top2';
-import Top3 from '../../src/components/Home/Top3/Top3';
+import Banner from './Home/Banner/Banner';
+import Top2 from './Home/About/About';
+import Top3 from './Home/Card/Card';
 import Footer from '../../src/components/Home/Footer/Footer';
 import { Routes, Route} from "react-router-dom"
-import Top4 from './Home/Top4/Top4';
-import Top5 from './Home/Top5/Top5';
+import Contact from './Home/Contact/Contact';
+import Team from './Home/Team/Team';
 import VideoPlayer from './Home/VideoPlayer/VideoPlayer';
+import About from './Home/About/About';
 
 
 // import CodeEditor from './CodeEditor/CodeEditor';
@@ -61,34 +62,15 @@ const Dashboard = () => {
 
     return (
         <>
-        <Top/>
-        <Top2/>
+        <Banner/>
+        <About/>
         <VideoPlayer/>
-        <Top3/>
-        
-        <Top5/>
-        <Top4/>
+        <Top3/>  
+        <Team/>
+        <Contact/>
         <br/>
         <Footer/>
         <br/>
-        {/* <Routes>
-              <Route path="/dash/" element={<Top3 />} />
-              
-              
-
-            </Routes> */}
-        
-       
-            {/* {
-                data ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center" , margin:'1.5rem'}}>
-                    <img src={img} style={{ width: "100%", marginTop: 20 ,height:"50%"}} alt=" hlo" />
-                    <h1>User Email:{logindata ? logindata.ValidUserOne.email : ""}</h1>
-                </div> : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>
-                    Loading... &nbsp;
-                    <CircularProgress />
-                </Box>
-            } */}
-
         </>
 
     )

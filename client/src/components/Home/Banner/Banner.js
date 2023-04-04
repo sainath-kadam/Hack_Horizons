@@ -2,7 +2,7 @@ import React from "react";
 import '../../../../src/assets/css/style.css'
 
 
-const Top = () => {
+const Banner = () => {
   return (
     <>
       <section className="home" id="home">
@@ -23,4 +23,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+export default Banner;

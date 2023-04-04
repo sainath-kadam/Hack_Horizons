@@ -37,9 +37,9 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Top5.css";
+import "./Team.css";
 
-const Top5 = () => {
+const Team = () => {
   return (
     <div className="about">
       <h1 className="heading">
@@ -79,4 +79,4 @@ const Top5 = () => {
   );
 };
 
-export default Top5;
+export default Team;

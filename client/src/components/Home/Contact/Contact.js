@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 // npm i emailjs-com
 
-const Top4 = () => {
+const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -48,7 +48,7 @@ const Top4 = () => {
   );
 };
 
-export default Top4;
+export default Contact;
 
 // Styles
 const StyledContactForm = styled.div`

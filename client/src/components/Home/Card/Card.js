@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { menu } from "../../../Data";
-import RquestionsSet from "../../Questionset/RquestionsSet";
+// import RquestionsSet from "../../Questionset/RquestionsSet";
 
-const Menu = () => {
+const Card = () => {
   return (
     <>
       <section className="menu" id="menu">
@@ -32,4 +32,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Card;
