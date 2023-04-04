@@ -14,6 +14,8 @@ import Team from '../Home/Team/Team';
 import VideoPlayer from '../Home/VideoPlayer/VideoPlayer';
 import About from '../Home/About/About';
 import VideoCall from '../Home/VideoCall/VideoCall';
+import PlacementPredictor from '../Home/PlacementPredictor/PlacementPredictor';
+import ButtonContainer from '../Home/ButtonContainer/ButtonContainer';
 
 
 // import CodeEditor from './CodeEditor/CodeEditor';
@@ -66,8 +68,12 @@ const Dashboard = () => {
         <Banner/>
         <About/>
         <VideoPlayer/>
+        <br/>
+        <ButtonContainer/>
         <Card/>
-        <VideoCall/> 
+        {/* <VideoCall/> 
+        <PlacementPredictor/> */}
+        
         <Team/>
         <Contact/>
         <br/>

@@ -14,6 +14,8 @@ import NquestionsSet from "./components/Questionset/NquestionsSet";
 import MquestionsSet from "./components/Questionset/MquestionsSet";
 import MlquestionsSet from "./components/Questionset/MlquestionsSet";
 import CssquestionsSet from "./components/Questionset/CssquestionsSet";
+import CppquestionsSet from "./components/Questionset/CppquestionsSet";
+import DsaquestionsSet from "./components/Questionset/DsaquestionsSet";
 
 function App() {
 
@@ -70,6 +72,8 @@ function App() {
               <Route path="/MquestionsSet" element={<MquestionsSet />} />
               <Route path="/MlquestionsSet" element={<MlquestionsSet />} />
               <Route path="/CssquestionsSet" element={<CssquestionsSet />} />
+              <Route path="/CppquestionsSet" element={<CppquestionsSet />} />
+              <Route path="/DsaquestionsSet" element={<DsaquestionsSet />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </>

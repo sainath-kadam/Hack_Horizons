@@ -88,6 +88,28 @@ const menu = [
       text: "Read More"
     }
   },
+  {
+    img: menuImage6,
+    trend: '4/5',
+    title: 'Cpp',
+    disc: "C++ is a high-level programming language with object-oriented features, designed for efficient system and application programming.",
+    link:"",
+    link: {
+      to: "/CppquestionsSet",
+      text: "Read More"
+    }
+  },
+  {
+    img: menuImage6,
+    trend: '5/5',
+    title: 'DSA',
+    disc: "DSA stands for Data Structures and Algorithms, which are fundamental concepts in computer science for efficient data organization and manipulation.",
+    link:"",
+    link: {
+      to: "/DsaquestionsSet",
+      text: "Read More"
+    }
+  },
 ];
 
 // const cart = [

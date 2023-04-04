@@ -48,27 +48,27 @@ const Team = () => {
       <div className="team">
         <div className="person">
           <img src="https://i.ibb.co/Xz9TL25/Whats-App-Image-2023-04-04-at-4-21-24-PM.jpg" alt="Person 1" className="round" />
-          <h2>John Doe</h2>
-          <p>Co-Founder & CEO</p>
-          <p>John has over 10 years of experience in the tech industry...</p>
+          <h2>Akash Kumar</h2>
+          <p>IIIT Tiruchirappalli, ECE</p>
+          <p>MERN and Django Developer </p>
           <Link to="/contact" className="contact-individual">
             Contact
           </Link>
         </div>
         <div className="person">
           <img src="https://i.ibb.co/Xz9TL25/Whats-App-Image-2023-04-04-at-4-21-24-PM.jpg" alt="Person 2" className="round" />
-          <h2>Jane Smith</h2>
-          <p>Co-Founder & CTO</p>
-          <p>Jane is a software engineer with a passion for building...</p>
+          <h2>Sainath Kadam</h2>
+          <p>IIIT Tiruchirappalli,ECE</p>
+          <p>MERN and Django Developer </p>
           <Link to="/contact" className="contact-individual">
             Contact
           </Link>
         </div>
         <div className="person">
           <img src="https://i.ibb.co/Xz9TL25/Whats-App-Image-2023-04-04-at-4-21-24-PM.jpg" alt="Person 3" className="round" />
-          <h2>Mike Johnson</h2>
-          <p>Head of Marketing</p>
-          <p>Mike has over 15 years of experience in marketing and communications...</p>
+          <h2>Harsh Kumar</h2>
+          <p>IIIT Tiruchirappalli,ECE</p>
+          <p>Expertise in Machine Learning</p>
           <Link to="/contact" className="contact-individual">
             Contact
           </Link>

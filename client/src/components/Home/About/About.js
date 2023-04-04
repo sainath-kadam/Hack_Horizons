@@ -20,9 +20,9 @@ const About = () => {
             The job market is constantly changing and becoming more competitive. At our interview preparation site, we understand the importance of being fully prepared and confident in your abilities. We offer a range of resources to help you succeed, from interview tips and techniques to personalized coaching. By investing in your professional development and honing your interview skills, you'll be better equipped to navigate the job market and achieve your career goals. Let us help you take the next step towards success.
 
             </p>
-            <a href="#" className="btn">
+            {/* <a href="#" className="btn">
               learn more
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
