@@ -60,8 +60,11 @@ const Header = () => {
         <>
             <header>
                 <nav>
+                     <div className="logo">
+    <img src="https://i.ibb.co/PWY29wB/Hack-horizons-low-resolution-logo-black-on-transparent-background.png" alt="Logo" />
+  </div>
                     
-                <NavLink to="/dash"><h1>Hack Horizons </h1></NavLink>
+                {/* <NavLink to="/dash"><h1>Hack Horizons </h1></NavLink> */}
                     <div className="avtar">
                         {
                             logindata.ValidUserOne ? <Avatar style={{ background: "salmon", fontWeight: "bold", textTransform: "capitalize" }} onClick={handleClick}>{logindata.ValidUserOne.fname[0].toUpperCase()}</Avatar> :

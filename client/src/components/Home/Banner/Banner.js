@@ -10,12 +10,17 @@ const Banner = () => {
         <h3>
             Ace Your Next <span>Interview</span>
           </h3>
-          <p>
-            Preparation is key to a successful interview. Let us help you with
-            our expert tips and resources.
-          </p>
-          <a href="#" className="btn">
-            get yours now
+          <h4>
+            
+            Go ace that interview , You're all set
+          </h4>
+          <a href="https://gilded-paprenjak-3f4356.netlify.app/"  target="_blank" className="btn">
+          Video call
+          </a>
+          <br/>
+          
+          <a href="https://gilded-paprenjak-3f4356.netlify.app/"  target="_blank" className="btn">
+          Placemenet Predict 
           </a>
         </div>
       </section>

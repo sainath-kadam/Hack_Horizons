@@ -47,31 +47,35 @@ const Team = () => {
         </h1>
       <div className="team">
         <div className="person">
-          <img src="https://i.ibb.co/Xz9TL25/Whats-App-Image-2023-04-04-at-4-21-24-PM.jpg" alt="Person 1" className="round" />
+          <img src="https://i.ibb.co/NpfNnjd/Whats-App-Image-2023-04-05-at-3-33-20-AM.jpg" alt="Person 1" className="round" />
+          <div className="pdetail">
           <h2>Akash Kumar</h2>
           <p>IIIT Tiruchirappalli, ECE</p>
           <p>MERN and Django Developer </p>
-          <Link to="/contact" className="contact-individual">
-            Contact
-          </Link>
+          <a href="https://github.com/akashqumar"  target="_blank" className="contact-global">
+          Contact
+          </a>
+          </div>
         </div>
         <div className="person">
           <img src="https://i.ibb.co/Xz9TL25/Whats-App-Image-2023-04-04-at-4-21-24-PM.jpg" alt="Person 2" className="round" />
+          <div className="pdetail">
           <h2>Sainath Kadam</h2>
           <p>IIIT Tiruchirappalli,ECE</p>
           <p>MERN and Django Developer </p>
-          <Link to="/contact" className="contact-individual">
-            Contact
-          </Link>
+          <a href="https://sainath-kadam.netlify.app"  target="_blank" className="contact-global">
+          Contact
+          </a>
+          </div>
         </div>
         <div className="person">
-          <img src="https://i.ibb.co/Xz9TL25/Whats-App-Image-2023-04-04-at-4-21-24-PM.jpg" alt="Person 3" className="round" />
+          <img src="https://i.ibb.co/wwsjD5t/Whats-App-Image-2023-04-05-at-3-39-29-AM.jpg" alt="Person 3" className="round" />
           <h2>Harsh Kumar</h2>
           <p>IIIT Tiruchirappalli,ECE</p>
           <p>Expertise in Machine Learning</p>
-          <Link to="/contact" className="contact-individual">
-            Contact
-          </Link>
+          <a href="https://www.linkedin.com/in/harsh-kmr/"  target="_blank" className="contact-global">
+          Contact
+          </a>
         </div>
       </div>
       

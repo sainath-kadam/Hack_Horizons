@@ -52,7 +52,7 @@ export default Contact;
 
 // Styles
 const StyledContactForm = styled.div`
-  width: 93%;
+  width: 97.5%;
   margin-left:2rem;
   margin-right:2rem;
   align-items: center;

@@ -16,6 +16,7 @@ import MlquestionsSet from "./components/Questionset/MlquestionsSet";
 import CssquestionsSet from "./components/Questionset/CssquestionsSet";
 import CppquestionsSet from "./components/Questionset/CppquestionsSet";
 import DsaquestionsSet from "./components/Questionset/DsaquestionsSet";
+import Footer from "./components/Home/Footer/Footer";
 
 function App() {
 
@@ -76,6 +77,7 @@ function App() {
               <Route path="/DsaquestionsSet" element={<DsaquestionsSet />} />
               <Route path="*" element={<Error />} />
             </Routes>
+            <Footer/>
           </>
 
         ) : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>

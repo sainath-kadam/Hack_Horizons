@@ -263,6 +263,7 @@
     padding: 0.8rem 1.6rem;
     margin-top: 3rem;
     border-radius: 1rem;
+    
     text-decoration: none;
   }
   
@@ -276,4 +277,6 @@
       margin-bottom: 2rem;
     }
   }
-  
+  .pdetail{
+    margin-bottom: 0%;
+  }

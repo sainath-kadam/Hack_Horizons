@@ -68,17 +68,13 @@ const Dashboard = () => {
         <Banner/>
         <About/>
         <VideoPlayer/>
-        <br/>
-        <ButtonContainer/>
+       
         <Card/>
-        {/* <VideoCall/> 
-        <PlacementPredictor/> */}
+       
         
-        <Team/>
+     <Team/>
         <Contact/>
-        <br/>
-        <Footer/>
-        <br/>
+        
         </>
 
     )
