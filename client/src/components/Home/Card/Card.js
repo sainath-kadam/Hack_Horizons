@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { menu } from "../../../Data";
+import { menu } from "../../Main/Data";
 // import RquestionsSet from "../../Questionset/RquestionsSet";
 
 const Card = () => {

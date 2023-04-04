@@ -1,9 +1,9 @@
-import menuImage1 from "../src/assets/images/menu-1.png";
-import menuImage2 from "./assets/images/menu-2.png";
-import menuImage3 from "./assets/images/menu-3.png";
-import menuImage4 from "./assets/images/menu-4.png";
-import menuImage5 from "./assets/images/menu-5.png";
-import menuImage6 from "./assets/images/menu-6.png";
+import menuImage1 from "../../assets/images/menu-1.png";
+import menuImage2 from "../../assets/images/menu-2.png";
+import menuImage3 from "../../assets/images/menu-3.png";
+import menuImage4 from "../../assets/images/menu-4.png";
+import menuImage5 from "../../assets/images/menu-5.png";
+import menuImage6 from "../../assets/images/menu-6.png";
 // import cartImage1 from "./assets/images/cart-item-1.png";
 // import cartImage2 from "./assets/images/cart-item-2.png";
 // import cartImage3 from "./assets/images/cart-item-3.png";
@@ -17,8 +17,8 @@ import menuImage6 from "./assets/images/menu-6.png";
 // import blogImage1 from "./assets/images/blog-1.jpeg";
 // import blogImage2 from "./assets/images/blog-2.jpeg";
 // import blogImage3 from "./assets/images/blog-3.jpeg";
-import RquestionsSet from "../src/components/Questionset/RquestionsSet";
-import NquestionsSet from "../src/components/Questionset/NquestionsSet";
+import RquestionsSet from "../Questionset/RquestionsSet";
+import NquestionsSet from "../Questionset/NquestionsSet";
 
 const menu = [
   {

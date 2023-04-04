@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Avatar from '@mui/material/Avatar';
 import "./header.css"
-import { LoginContext } from './ContextProvider/Context';
+import { LoginContext } from '../ContextProvider/Context';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate , NavLink } from "react-router-dom"

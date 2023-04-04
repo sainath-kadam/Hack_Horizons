@@ -1,8 +1,8 @@
-import Header from "./components/Header";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Dashboard from "./components/Dashboard";
-import Error from "./components/Error";
+import Header from "./components/Main/Header";
+import Login from "./components/Main/Login";
+import Register from "./components/Main/Register";
+import Dashboard from "./components/Main/Dashboard";
+import Error from "./components/Main/Error";
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import { Routes, Route, useNavigate } from "react-router-dom"
@@ -60,7 +60,6 @@ function App() {
         data ? (
           <>
             <Header />
-
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
@@ -72,7 +71,6 @@ function App() {
               <Route path="/MlquestionsSet" element={<MlquestionsSet />} />
               <Route path="/CssquestionsSet" element={<CssquestionsSet />} />
               <Route path="*" element={<Error />} />
-
             </Routes>
           </>
 
