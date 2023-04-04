@@ -1,5 +1,5 @@
 import pickle
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request, jsonify
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
@@ -41,12 +41,19 @@ def predict_admission():
     # display result
     return render_template('result_adm.html', prediction=prediction)
 
-# prediction function for placement
-def predict_plm(x):
-  x = np.array(x).reshape(1,-1)
-  x = scaler_plm.transform(x)
-  y = model_plm.predict(x)
-  return y[0]
+
+@app.route('/predict_admission_api', methods=['POST'])
+def predict_admission_api():
+    # retrieve input data from request
+    input_data = request.get_json()
+    # retrieve form data
+    input_features = [float(x) for x in input_data.values()]
+
+    # generate prediction
+    prediction = predict_adm(input_features)
+    output = {'prediction': prediction}
+    return jsonify(output)
+
 
 @app.route('/plm')
 def home_plm():
