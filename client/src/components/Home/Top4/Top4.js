@@ -31,7 +31,10 @@ const Top4 = () => {
 
   return (
     <StyledContactForm>
-      <h1>Contact US</h1>
+      <h1 className="heading">
+          <span>Contact With Us</span>
+        </h1>
+   
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" required />
@@ -50,16 +53,17 @@ export default Top4;
 // Styles
 // Styles
 const StyledContactForm = styled.div`
-  width: 80%;
+  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
   height: calc(100vh - 200px);
 
   form {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     width: 80%;
     font-size: 16px;

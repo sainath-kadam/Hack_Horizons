@@ -9,7 +9,11 @@ import { Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import RquestionsSet from "./components/Questionset/RquestionsSet";
-
+import EquestionsSet from "./components/Questionset/EquestionsSet";
+import NquestionsSet from "./components/Questionset/NquestionsSet";
+import MquestionsSet from "./components/Questionset/MquestionsSet";
+import MlquestionsSet from "./components/Questionset/MlquestionsSet";
+import CssquestionsSet from "./components/Questionset/CssquestionsSet";
 
 function App() {
 
@@ -62,6 +66,11 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/dash" element={<Dashboard />} />
               <Route path="/RquestionsSet" element={<RquestionsSet />} />
+              <Route path="/NquestionsSet" element={<NquestionsSet />} />
+              <Route path="/EquestionsSet" element={<EquestionsSet />} />
+              <Route path="/MquestionsSet" element={<MquestionsSet />} />
+              <Route path="/MlquestionsSet" element={<MlquestionsSet />} />
+              <Route path="/CssquestionsSet" element={<CssquestionsSet />} />
               <Route path="*" element={<Error />} />
 
             </Routes>

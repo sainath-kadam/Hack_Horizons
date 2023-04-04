@@ -18,6 +18,7 @@ import menuImage6 from "./assets/images/menu-6.png";
 // import blogImage2 from "./assets/images/blog-2.jpeg";
 // import blogImage3 from "./assets/images/blog-3.jpeg";
 import RquestionsSet from "../src/components/Questionset/RquestionsSet";
+import NquestionsSet from "../src/components/Questionset/NquestionsSet";
 
 const menu = [
   {
