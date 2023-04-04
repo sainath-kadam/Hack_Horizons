@@ -1,73 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Placement Prediction Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .navbar {
+            margin-bottom: 2rem;
+        }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 2rem 0;
+            background-color: #f5f5f5;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Placement Prediction Form</h1>
-    <form method="POST" action="/predict_placement">
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select><br><br>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Placement Predictor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <label for="ssc_p">Secondary Education percentage:</label>
-        <input type="number" id="ssc_p" name="ssc_p" min="0" max="100" step="0.01" required><br><br>
+    <!-- Main content -->
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Placement Prediction Form</h1>
+            <p class="lead">Fill out the form to predict your placement chances.</p>
+        </div>
 
-        <label for="ssc_b">Board of Education:</label>
-        <select id="ssc_b" name="ssc_b">
-            <option value="Others">Others</option>
-            <option value="Central">Central</option>
-        </select><br><br>
+        <form method="POST" action="/predict_placement">
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" class="form-control">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
 
-        <label for="hsc_p">Higher Secondary Education percentage:</label>
-        <input type="number" id="hsc_p" name="hsc_p" min="0" max="100" step="0.01" required><br><br>
+            <div class="form-group">
+                <label for="ssc_p">Secondary Education percentage:</label>
+                <input type="number" id="ssc_p" name="ssc_p" min="0" max="100" step="0.01" required
+                    class="form-control">
+            </div>
 
-        <label for="hsc_b">Board of Education:</label>
-        <select id="hsc_b" name="hsc_b">
-            <option value="Others">Others</option>
-            <option value="Central">Central</option>
-        </select><br><br>
+            <div class="form-group">
+                <label for="ssc_b">Board of Education:</label>
+                <select id="ssc_b" name="ssc_b" class="form-control">
+                    <option value="Others">Others</option>
+                    <option value="Central">Central</option>
+                </select>
+            </div>
 
-        <label for="hsc_s">Specialization in Higher Secondary Education:</label>
-        <select id="hsc_s" name="hsc_s">
-            <option value="Commerce">Commerce</option>
-            <option value="Science">Science</option>
-            <option value="Arts">Arts</option>
-        </select><br><br>
+            <div class="form-group">
+                <label for="hsc_p">Higher Secondary Education percentage:</label>
+                <input type="number" id="hsc_p" name="hsc_p" min="0" max="100" step="0.01" class="form-control"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="hsc_b">Board of Education:</label>
+                <select id="hsc_b" name="hsc_b" class="form-control">
+                    <option value="Others">Others</option>
+                    <option value="Central">Central</option>
+                </select>
+            </div>
 
-        <label for="degree_p">Degree Percentage:</label>
-        <input type="number" id="degree_p" name="degree_p" min="0" max="100" step="0.01" required><br><br>
+            <div class="form-group">
+                <label for="hsc_s">Specialization in Higher Secondary Education:</label>
+                <select id="hsc_s" name="hsc_s" class="form-control">
+                    <option value="Commerce">Commerce</option>
+                    <option value="Science">Science</option>
+                    <option value="Arts">Arts</option>
+                </select>
+            </div>
 
-        <label for="degree_t">Under Graduation(Degree type):</label>
-        <select id="degree_t" name="degree_t">
-            <option value="Sci&Tech">Science and Technology</option>
-            <option value="Comm&Mgmt">Commerce and Management</option>
-            <option value="Others">Others</option>
-        </select><br><br>
+            <div class="form-group">
+                <label for="degree_p">Degree Percentage:</label>
+                <input type="number" id="degree_p" name="degree_p" min="0" max="100" step="0.01" class="form-control"
+                    required>
+            </div>
 
-        <label for="workex">Work Experience:</label>
-        <select id="workex" name="workex">
-            <option value="No">No</option>
-            <option value="Yes">Yes</option>
-        </select><br><br>
+            <div class="form-group">
+                <label for="degree_t">Under Graduation(Degree type):</label>
+                <select id="degree_t" name="degree_t" class="form-control">
+                    <option value="Sci&Tech">Science and Technology</option>
+                    <option value="Comm&Mgmt">Commerce and Management</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
 
-        <label for="etest_p">Employability test percentage:</label>
-        <input type="number" id="etest_p" name="etest_p" min="0" max="100" step="0.01" required><br><br>
+            <div class="form-group">
+                <label for="workex">Work Experience:</label>
+                <select id="workex" name="workex" class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
 
-        <label for="specialisation">Post Graduation(MBA)- Specialization:</label>
-        <select id="specialisation" name="specialisation">
-            <option value="Mkt&HR">Marketing and Human Resources</option>
-            <option value="Mkt&Fin">Marketing and Finance</>
-            </select>
-            <br><br>
-            <label for="mba_p">MBA percentage:</label>
-            <input type="number" id="mba_p" name="mba_p" min="0" step="0.01" required>
-            <br><br>
-            
-            <input type="submit" value="Predict">
+            <div class="form-group">
+                <label for="etest_p">Employability test percentage:</label>
+                <input type="number" id="etest_p" name="etest_p" min="0" max="100" step="0.01" class="form-control"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="specialisation">Post Graduation(MBA)- Specialization:</label>
+                <select id="specialisation" name="specialisation" class="form-control">
+                    <option value="Mkt&HR">Marketing and Human Resources</option>
+                    <option value="Mkt&Fin">Marketing and Finance</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mba_p">MBA percentage:</label>
+                <input type="number" id="mba_p" name="mba_p" min="0" step="0.01" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict</button>
+
         </form>
+        </div>
+
+        <footer class="text-center bg-light py-3">
+            <p>&copy; 2023 Placement Prediction Form. All Rights Reserved.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
