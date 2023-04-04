@@ -8,6 +8,7 @@ import Top from '../../src/components/Home/Top1/Top';
 import Top2 from '../../src/components/Home/Top2/Top2';
 import Top3 from '../../src/components/Home/Top3/Top3';
 import Footer from '../../src/components/Home/Footer/Footer';
+import { Routes, Route} from "react-router-dom"
 import Top4 from './Home/Top4/Top4';
 
 
@@ -59,13 +60,19 @@ const Dashboard = () => {
 
     return (
         <>
-        {/* <Top/>
+        <Top/>
         <Top2/>
         <Top3/>
         <Top4/>
         <br/>
         <Footer/>
-         */}
+        {/* <Routes>
+              <Route path="/dash/" element={<Top3 />} />
+              
+              
+
+            </Routes> */}
+        
        
             {/* {
                 data ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center" , margin:'1.5rem'}}>

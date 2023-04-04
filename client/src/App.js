@@ -61,7 +61,7 @@ function App() {
               <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dash" element={<Dashboard />} />
-              <Route path="/react" element={<RquestionsSet />} />
+              <Route path="/RquestionsSet" element={<RquestionsSet />} />
               <Route path="*" element={<Error />} />
 
             </Routes>
