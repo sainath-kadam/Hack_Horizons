@@ -19,7 +19,7 @@ const Banner = () => {
           </a>
           <br/>
           
-          <a href="https://gilded-paprenjak-3f4356.netlify.app/"  target="_blank" className="btn">
+          <a href="https://predictor0model.pythonanywhere.com/"  target="_blank" className="btn">
           Placemenet Predict 
           </a>
         </div>
