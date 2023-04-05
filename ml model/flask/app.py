@@ -6,6 +6,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
+
+
 #open pickle file
 model_adm = pickle.load(open('/workspaces/Hack_Horizons/ml model/flask/model_adm.pickle','rb'))
 scaler_adm = pickle.load(open('/workspaces/Hack_Horizons/ml model/flask/scaler_adm.pickle','rb'))
@@ -16,13 +18,19 @@ columns_plm = ['ssc_p', 'hsc_p', 'degree_p', 'etest_p', 'mba_p', 'gender_M', 'ss
                'hsc_b_Others', 'hsc_s_Commerce', 'hsc_s_Science', 'degree_t_Others',
                'degree_t_Sci&Tech', 'workex_Yes', 'specialisation_Mkt&HR']
 
-
 # prediction function for admission
 def predict_adm(x):
   x = np.array(x).reshape(1,-1)
   x = scaler_adm.transform(x)
   y = model_adm.predict(x)
   return y[0]
+
+# add a home page
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+
 
 @app.route('/adm')
 def home_adm():
