@@ -19,7 +19,7 @@ const Banner = () => {
           </a>
           <br/>
           
-          <a href="https://predictor0model.pythonanywhere.com/plm"  target="_blank" className="btn">
+          <a href="https://predictor0model.pythonanywhere.com/"  target="_blank" className="btn">
           Placemenet Predict 
           </a>
         </div>
