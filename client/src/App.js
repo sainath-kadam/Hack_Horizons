@@ -28,28 +28,6 @@ function App() {
 
   const history = useNavigate();
 
-  
-  // const DashboardValid = async () => {
-  //   let token = localStorage.getItem("usersdatatoken");
-
-  //   const res = await fetch("/validuser", {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "Authorization": token
-  //     }
-  //   });
-
-  //   const data = await res.json();
-
-  //   if (data.status == 401 || !data) {
-  //     console.log("user not valid");
-  //   } else {
-  //     console.log("user verify");
-  //     setLoginData(data)
-  //     history("/dash");
-  //   }
-  // }
 
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
@@ -109,11 +87,6 @@ function App() {
               <Route path="/CssquestionsSet" element={<CssquestionsSet />} />
               <Route path="/CppquestionsSet" element={<CppquestionsSet />} />
               <Route path="/DsaquestionsSet" element={<DsaquestionsSet />} />
-
-              {/* <Route exact path="/">
-                {isLoggedIn ? <Navigate to="/RquestionsSet" /> : <RquestionsSet setIsLoggedIn={setIsLoggedIn} />}
-              </Route> */}
-
               <Route path="*" element={<Error />} />
             </Routes>
             <Footer/>
