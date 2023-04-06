@@ -5,7 +5,7 @@ import Dashboard from "./components/Main/Dashboard";
 import Error from "./components/Main/Error";
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
-import { Routes, Route, useNavigate } from "react-router-dom"
+import { Routes, Route, useNavigate,Redirect, Navigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import RquestionsSet from "./components/Questionset/RquestionsSet";
@@ -17,19 +17,43 @@ import CssquestionsSet from "./components/Questionset/CssquestionsSet";
 import CppquestionsSet from "./components/Questionset/CppquestionsSet";
 import DsaquestionsSet from "./components/Questionset/DsaquestionsSet";
 import Footer from "./components/Home/Footer/Footer";
+// import MyComponent from "./components/Main/Refesh";
 
 function App() {
 
   const [data, setData] = useState(false);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { logindata, setLoginData } = useContext(LoginContext);
 
 
   const history = useNavigate();
 
+  
+  // const DashboardValid = async () => {
+  //   let token = localStorage.getItem("usersdatatoken");
+
+  //   const res = await fetch("/validuser", {
+  //     method: "GET",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       "Authorization": token
+  //     }
+  //   });
+
+  //   const data = await res.json();
+
+  //   if (data.status == 401 || !data) {
+  //     console.log("user not valid");
+  //   } else {
+  //     console.log("user verify");
+  //     setLoginData(data)
+  //     history("/dash");
+  //   }
+  // }
+
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
-
+  
     const res = await fetch("/validuser", {
       method: "GET",
       headers: {
@@ -37,17 +61,27 @@ function App() {
         "Authorization": token
       }
     });
-
+  
     const data = await res.json();
-
+  
     if (data.status == 401 || !data) {
       console.log("user not valid");
     } else {
       console.log("user verify");
       setLoginData(data)
-      history("/dash");
+      // history("/dash"); replace with:
+      return <Navigate to="/dash" />;
+    }
+    if (data.status == 401 || !data) {
+      console.log("user not valid");
+    } else {
+      console.log("user verify");
+      setLoginData(data)
+      // history("/dash"); replace with:
+      return <Navigate to="/" />;
     }
   }
+  
 
   useEffect(() => {
     setTimeout(()=>{
@@ -75,11 +109,15 @@ function App() {
               <Route path="/CssquestionsSet" element={<CssquestionsSet />} />
               <Route path="/CppquestionsSet" element={<CppquestionsSet />} />
               <Route path="/DsaquestionsSet" element={<DsaquestionsSet />} />
+
+              {/* <Route exact path="/">
+                {isLoggedIn ? <Navigate to="/RquestionsSet" /> : <RquestionsSet setIsLoggedIn={setIsLoggedIn} />}
+              </Route> */}
+
               <Route path="*" element={<Error />} />
             </Routes>
             <Footer/>
           </>
-
         ) : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>
           Loading... &nbsp;
           <CircularProgress />
@@ -90,5 +128,4 @@ function App() {
     </>
   );
 }
-
 export default App;

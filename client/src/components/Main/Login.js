@@ -6,7 +6,6 @@ import "./mix.css"
 const Login = () => {
 
     const [passShow, setPassShow] = useState(false);
-
     const [inpval, setInpval] = useState({
         email: "",
         password: "",
@@ -15,7 +14,7 @@ const Login = () => {
     const history = useNavigate();
 
     const setVal = (e) => {
-        // console.log(e.target.value);
+        console.log(e.target.value);
         const { name, value } = e.target;
 
         setInpval(() => {
@@ -28,6 +27,7 @@ const Login = () => {
 
 
     const loginuser = async(e) => {
+        console.log(e.target.value);
         e.preventDefault();
 
         const { email, password } = inpval;
@@ -49,7 +49,7 @@ const Login = () => {
                 position: "top-center"
             });
         } else {
-            // console.log("user login succesfully done");
+            console.log("user login succesfully done");
 
 
             const data = await fetch("/login",{
@@ -63,11 +63,11 @@ const Login = () => {
             });
 
             const res = await data.json();
-            //  console.log(res);
+             console.log(res);
 
             if(res.status === 201){
                 localStorage.setItem("usersdatatoken",res.result.token);
-                history("/dash")
+                history("/dash");
                 setInpval({...inpval,email:"",password:""});
             }
         }

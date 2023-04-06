@@ -77,7 +77,7 @@ const Header = () => {
             {logindata.ValidUserOne ? (
               <Avatar
                 style={{
-                  background: "salmon",
+                  background: "black",
                   fontWeight: "bold",
                   textTransform: "capitalize",
                 }}
@@ -86,7 +86,7 @@ const Header = () => {
                 {logindata.ValidUserOne.fname[0].toUpperCase()}
               </Avatar>
             ) : (
-              <Avatar style={{ background: "blue" }} onClick={handleClick} />
+              <Avatar style={{ background: "black" }} onClick={handleClick} />
             )}
           </div>
 

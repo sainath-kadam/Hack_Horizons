@@ -15,7 +15,7 @@ const Banner = () => {
             Go ace that interview , You're all set
           </h4>
           <a href="https://gilded-paprenjak-3f4356.netlify.app/"  target="_blank" className="btn">
-          Video call
+          Interview call  
           </a>
           <br/>
           

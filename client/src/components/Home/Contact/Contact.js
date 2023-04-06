@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
-// npm i emailjs-com
+
 
 const Contact = () => {
   const form = useRef();
@@ -60,7 +60,7 @@ const StyledContactForm = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  height: calc(100vh - 200px);
+  height: calc(75vh - 100px);
   border: 2px solid black;
   background-color: #f0f0f0;
 
@@ -122,122 +122,4 @@ const StyledContactForm = styled.div`
   h1 {
     text-align: center;
   }
-};
-
-
-// import emailjs from "@emailjs/browser";
-// import React, { useRef } from "react";
-
-// import styled from "styled-components";
-
-// const ContactForm = () => {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm(
-//         "service_if1i5xw",
-//         "template_nket8n8",
-//         form.current,
-//         "user_335ejCTAEklXOQOUw"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           console.log("message sent");
-//           e.target.reset();
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//       );
-//   };
-
-//   return (
-//     <StyledContactForm>
-//       <h1>Contact Us</h1>
-//       <form ref={form} onSubmit={sendEmail}>
-//         <div className="form-group">
-//           <label htmlFor="name">Name:</label>
-//           <input type="text" id="name" name="user_name" required />
-//         </div>
-//         <div className="form-group">
-//           <label htmlFor="email">Email:</label>
-//           <input type="email" id="email" name="user_email" required />
-//         </div>
-//         <div className="form-group">
-//           <label htmlFor="message">Message:</label>
-//           <textarea id="message" name="message" required></textarea>
-//         </div>
-//         <button type="submit">Send</button>
-//       </form>
-//     </StyledContactForm>
-//   );
-// };
-
-// export default ContactForm;
-
-// const StyledContactForm = styled.div`
-//   background-color: gray;
-//   color: white;
-//   padding: 2rem;
-//   border-radius: 10px;
-
-//   h1 {
-//     text-align: center;
-//     margin-bottom: 2rem;
-//   }
-
-//   form {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-
-//     .form-group {
-//       width: 30%;
-//       display: flex;
-//       flex-direction: column;
-//       margin-bottom: 1rem;
-
-//       label {
-//         font-size: 1.1rem;
-//         margin-bottom: 0.5rem;
-//       }
-
-//       input,
-//       textarea {
-//         padding: 0.5rem;
-//         border-radius: 5px;
-//         border: none;
-//         outline: none;
-//         font-size: 1rem;
-//       }
-
-//       input {
-//         height: 35px;
-//         margin-right: 1rem;
-//       }
-
-//       textarea {
-//         resize: none;
-//         height: 100px;
-//         margin-right: 1rem;
-//       }
-//     }
-
-//     button {
-//       width: 100px;
-//       height: 35px;
-//       border-radius: 5px;
-//       border: none;
-//       outline: none;
-//       font-size: 1rem;
-//       background-color: rgb(249, 105, 14);
-//       color: white;
-//       margin-top: 1rem;
-//       align-self: flex-end;
-//     }
-//   }
-// `;
+};`

@@ -46,7 +46,7 @@ const userSchema = new mongoose.Schema({
 
 
 
-// hash password
+
 
 userSchema.pre("save", async function (next) {
 
@@ -58,7 +58,6 @@ userSchema.pre("save", async function (next) {
 });
 
 
-// token generate
 userSchema.methods.generateAuthtoken = async function () {
     try {
         let token23 = jwt.sign({ _id: this._id }, keysecret, {
@@ -74,10 +73,7 @@ userSchema.methods.generateAuthtoken = async function () {
 }
 
 
-// createing model
 const userdb = new mongoose.model("users", userSchema);
 
 module.exports = userdb;
 
-
-// if (this.isModified("password")) {    }

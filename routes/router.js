@@ -3,8 +3,6 @@ const router = new express.Router();
 const userdb = require("../models/userSchema");
 var bcrypt = require("bcryptjs");
 const authenticate = require("../middleware/authenticate");
-
-
 // for user registration
 
 router.post("/register", async (req, res) => {
@@ -43,13 +41,10 @@ router.post("/register", async (req, res) => {
 
 });
 
-
-
-
 // user Login
 
 router.post("/login", async (req, res) => {
-    // console.log(req.body);
+    console.log(req.body);
 
     const { email, password } = req.body;
 
@@ -102,8 +97,6 @@ router.get("/validuser",authenticate,async(req,res)=>{
         res.status(401).json({status:401,error});
     }
 });
-
-
 // user logout
 
 router.get("/logout",authenticate,async(req,res)=>{
@@ -126,16 +119,6 @@ router.get("/logout",authenticate,async(req,res)=>{
 
 module.exports = router;
 
-
-
-// 2 way connection
-// 12345 ---> e#@$hagsjd
-// e#@$hagsjd -->  12345
-
-// hashing compare
-// 1 way connection
-// 1234 ->> e#@$hagsjd
-// 1234->> (e#@$hagsjd,e#@$hagsjd)=> true
 
 
 

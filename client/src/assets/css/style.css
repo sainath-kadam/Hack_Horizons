@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif;
+ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,12 +33,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: white;
+  background: #317773;
   overflow-x: hidden;
 }
 
 section {
-  padding: 2rem 7%;
+  padding: 1rem 7%;
 }
 
 .heading {
@@ -159,6 +159,7 @@ section {
   padding: 2rem;
   text-align: center;
   background: black;
+  border-radius: 1.5rem;
   /* border: 0.2rem solid #30ff07; */
 }
 
@@ -195,73 +196,20 @@ section {
   transition: 0.5s;
 }
 
-/* 
-.blogs .box-container .box {
-  border: 0.2rem solid  #30ff07;
-}
-
-.blogs .box-container .box .image {
-  height: 25rem;
-  overflow: hidden;
-  width: 100%;
-}
-
-.blogs .box-container .box .image img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-.blogs .box-container .box:hover .image img {
-  transform: scale(1.2);
-}
-
-.blogs .box-container .box .content {
-  padding: 2rem;
-}
-
-.blogs .box-container .box .content .title {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  color: #fff;
-}
-
-.blogs .box-container .box .content .title:hover {
-  color: #ffc107;
-}
-
-.blogs .box-container .box .content span {
-  color: #ffc107;
-  display: block;
-  padding-top: 1rem;
-  font-size: 2rem;
-}
-
-.blogs .box-container .box .content p {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  color: #ccc;
-  padding: 1rem 0;
-} */
-
-/* .footer {
-  background: #13131a;
-  text-align: center;
-  padding: 1rem 0;
-  height: 0rem;
-} */
 
 .footer {
   background: #13131a;
   text-align: center;
-  padding: 25rem 0;
-  height: 1rem;
+  padding: 5rem 0;
+ 
 }
 
 
 .footer .share {
-  padding: 1rem 0;
+  padding: 2rem 0;
+  height: 8rem;
 }
+
 
 .footer .share a {
   display: inline-flex;
@@ -311,7 +259,7 @@ section {
   color: #ffc107;
 }
 
-
+   
 
 /* media queries  */
 @media (max-width: 991px) {

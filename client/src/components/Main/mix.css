@@ -1,18 +1,19 @@
 section{
     width: 100%;
     padding: 10px;
-    min-height:calc(100vh - 80px);
+    min-height:calc(20vh - 40px);
 }
 
 section .form_data{
     max-width: 550px;
     margin: 25px auto;
     padding: 35px 10px;
-    box-shadow: 0 0 15px -10px #2d3748;
+    box-shadow: 0 0 30px -1px #ffc107;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
 }
 
 .form_heading{
@@ -23,11 +24,11 @@ section .form_data{
 
 .form_data h1{
     font-size: 34px;
-    color: #2a4365;
+    color: white;
 }
 
 .form_data p{
-    color: #718096;
+    color: black;
     font-size: 15px;
     margin-top:9px;
 }
@@ -115,6 +116,6 @@ form .btn:hover{
 
 .form_data form a{
     text-decoration: none;
-    color:#718096 ;
+    color:white ;
     border-bottom: 2px solid #8694a8;
 }

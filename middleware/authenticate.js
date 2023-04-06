@@ -1,8 +1,6 @@
 const jwt = require("jsonwebtoken");
 const userdb = require("../models/userSchema");
 const keysecret = process.env.SECRET_KEY
-
-
 const authenticate = async(req,res,next)=>{
 
     try {
