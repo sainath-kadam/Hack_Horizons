@@ -1,5 +1,7 @@
 import React from "react";
 import '../../../../src/assets/css/style.css'
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 
 const Banner = () => {
@@ -14,9 +16,11 @@ const Banner = () => {
             
             Go ace that interview , You're all set
           </h4>
-          <a href="https://fantastic-halva-e9efb3.netlify.app/"  target="_blank" className="btn">
-          Interview call  
-          </a>
+          <Link to="/dash/room">
+            <Button className="btn">
+              Interview Room
+            </Button>
+          </Link>
           <br/>
           
           <a href="https://predictor0model.pythonanywhere.com/"  target="_blank" className="btn">

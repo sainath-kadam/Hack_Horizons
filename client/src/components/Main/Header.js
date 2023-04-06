@@ -28,7 +28,6 @@ const Header = () => {
 
   const logoutuser = async () => {
     let token = localStorage.getItem("usersdatatoken");
-
     const res = await fetch("/logout", {
       method: "GET",
       headers: {
@@ -38,12 +37,12 @@ const Header = () => {
       },
       credentials: "include",
     });
-
+    
     const data = await res.json();
     console.log(data);
-
-    if (data.status == 201) {
-      console.log("use logout");
+  
+    if (data.status === 201) {
+      console.log("user logout");
       localStorage.removeItem("usersdatatoken");
       setLoginData(false);
       history("/");
@@ -56,7 +55,6 @@ const Header = () => {
     history("/dash");
   };
   
-
   const goError = () => {
     history("*");
   };

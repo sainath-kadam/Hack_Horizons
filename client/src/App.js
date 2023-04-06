@@ -17,6 +17,8 @@ import CssquestionsSet from "./components/Questionset/CssquestionsSet";
 import CppquestionsSet from "./components/Questionset/CppquestionsSet";
 import DsaquestionsSet from "./components/Questionset/DsaquestionsSet";
 import Footer from "./components/Home/Footer/Footer";
+import HomePage from "./pages/Home";
+import RoomPage from "./pages/Room";
 // import MyComponent from "./components/Main/Refesh";
 
 function App() {
@@ -79,6 +81,8 @@ function App() {
               <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dash" element={<Dashboard />} />
+              <Route path="/dash/room" element={<HomePage />} />
+              <Route path="/dash/room/:roomId" element={<RoomPage/>} />
               <Route path="/RquestionsSet" element={<RquestionsSet />} />
               <Route path="/NquestionsSet" element={<NquestionsSet />} />
               <Route path="/EquestionsSet" element={<EquestionsSet />} />
