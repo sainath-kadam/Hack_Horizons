@@ -327,3 +327,17 @@ section {
     font-size: 50%;
   }
 }
+.btn {
+  margin-top: 1rem;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 2rem;
+  color: #fff;
+  background:  #FF5100;
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}

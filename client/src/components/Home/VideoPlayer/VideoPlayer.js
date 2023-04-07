@@ -18,7 +18,7 @@ function VideoPlayer() {
         ref={playerRef}
         url={VIDEO_PATH}
         controls={true}
-        playing={true}
+        playing={false}
         muted={true}
         width="50%"
         height="100%"
