@@ -161,35 +161,6 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  // const logoutUser = async () => {
-  //   try {
-  //     const token = localStorage.getItem("usersdatatoken");
-  //     console.log(token);
-  //     const res = await fetch("https://hac-bac.onrender.com/logout", {
-  //       method: "GET",
-  //       headers: {
-  //         "Content-Type": "application/json",
-          
-  //         Authorization: token,
-  //         Accept: "application/json",
-  //       },
-  //       credentials: "include",
-  //     });
-      
-  //     const data = await res.json();
-    
-  //     if (data.status === 201) {
-  //       localStorage.removeItem("usersdatatoken");
-  //       setLoginData(false);
-  //       navigate("/");
-  //     } else {
-  //       console.log("error");
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
   const goDash = () => {
     navigate("/dash");
     handleClose();

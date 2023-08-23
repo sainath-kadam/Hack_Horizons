@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import { menu } from "../../Main/Data";
-
-
 const Card = () => {
   return (
     <>

@@ -22,6 +22,4 @@ const authenticate = async(req,res,next)=>{
         res.status(401).json({status:401,message:"Unauthorized no token provide"})
     }
 }
-
-
 module.exports = authenticate

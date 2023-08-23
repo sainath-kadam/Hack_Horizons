@@ -23,9 +23,9 @@ const Banner = () => {
 </Link>
           <br/>
           
-          <a href="https://predictor0model.pythonanywhere.com/"  target="_blank" className="btn">
+          {/* <a href="https://predictor0model.pythonanywhere.com/"  target="_blank" className="btn">
           Placemenet Predict 
-          </a>
+          </a> */}
         </div>
       </section>
     </>
